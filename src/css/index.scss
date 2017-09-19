@@ -9,7 +9,8 @@
     margin: 0 auto;
     width: rem(368);
     height: rem(638);
-    background-color: #e6e6e6;
+    background-color: #fff;
+    
     .titletext{
       @include font_small_head();
       width: rem(368);
@@ -19,10 +20,11 @@
       font-weight: 600;
       line-height: rem(48);
       background-color: #f8f8f8;
+      font-family: "SimSun","Microsoft YaHei","黑体","宋体",sans-serif;
     }
     .messages{
       padding-top: rem(27);
-      border-top: rem(1) solid #bbbbbb;
+      border-top: rem(1) solid #bbb;
       .bankOutlets{
         width: rem(368);
         display: flex;
@@ -34,13 +36,14 @@
           width: rem(100);
           text-align: center;
           padding-top: rem(3); 
+         
         }
         .input{
           color: #000;
           width:rem(248);
           height:rem(28);
           border: 1px solid #ccc;
-          border-radius: 2px;
+          border-radius: rem(5);
           transition:  0.3s ease-in-out;
           text-indent: rem(5);
         }
@@ -62,9 +65,11 @@
           width:rem(248);
           height:rem(28);
           border: 1px solid #ccc;
-          border-radius: 2px;
+          border-radius: rem(5);
           transition:  0.3s ease-in-out;
           text-indent: rem(5);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+         
         }
       }
       .jobNumber{
@@ -93,7 +98,7 @@
           width:rem(248);
           height:rem(28);
           border: 1px solid #ccc;
-          border-radius: 2px;
+          border-radius: rem(5);
           transition:  0.3s ease-in-out;
           text-indent: rem(5);
         }
@@ -118,7 +123,7 @@
       .input:focus {
         outline: none;
         border-color: #9ecaed;
-        box-shadow: 0 0 10px #9ecaed;
+        box-shadow: 0 0 rem(10) #9ecaed;
     }
 
     }
