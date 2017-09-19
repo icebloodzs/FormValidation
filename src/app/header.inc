@@ -2,8 +2,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width，initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<!-- 移动端WebApp全屏模式 -->
-	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<!-- <meta name="apple-mobile-web-app-capable" content="yes">  -->
 	<!-- <link href="//cdn.bootcss.com/aos/1.2.2/aos.css" rel="stylesheet"> -->
 	<!-- <link href="//cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet"> -->
 	<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
