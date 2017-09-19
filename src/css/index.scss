@@ -36,11 +36,12 @@
           padding-top: rem(3); 
         }
         .input{
-          color: #a3a3a3;
+          color: #000;
           width:rem(248);
           height:rem(28);
-          font-size: rem(16);
-          font-weight: 400;
+          border: 1px solid #ccc;
+          border-radius: 2px;
+          transition:  0.3s ease-in-out;
           text-indent: rem(5);
         }
       }
@@ -57,10 +58,12 @@
           padding-top: rem(3); 
         }
         .input{
-          color: #a3a3a3;
+          color: #000;
           width:rem(248);
           height:rem(28);
-          font-weight: 400;
+          border: 1px solid #ccc;
+          border-radius: 2px;
+          transition:  0.3s ease-in-out;
           text-indent: rem(5);
         }
       }
@@ -86,10 +89,12 @@
         
         }
         .input{ 
-          color: #a3a3a3;
+          color: #000;
           width:rem(248);
           height:rem(28);
-          font-weight: 400;
+          border: 1px solid #ccc;
+          border-radius: 2px;
+          transition:  0.3s ease-in-out;
           text-indent: rem(5);
         }
       }
@@ -110,5 +115,11 @@
         cursor: pointer;
         outline: none;
       }
+      .input:focus {
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+    }
+
     }
 }
