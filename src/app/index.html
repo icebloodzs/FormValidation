@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
 	@@include('header.inc')
-	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/index.css" />
 </head>
 <body>
 	<div class="generatePosters">
-		<div class="titletext">生成海报-信息填写</div>
-		<form name="myPosters" action="demo.jsp" method="post" class="messages">
+		<div class="title_text">生成海报-信息填写</div>
+		<form action="" class="messages" id="generatePostersform" name="form">
 			<div class="bankOutlets">
-				<div class="bankOutlets_con">银行网点</div>
-				<select class="input" name="yhwd">
+				<label class="bankOutlets_con" for="doc-select-1">银行网点</label>
+				<select class="input" id="doc-select-1" name="bankOutlets">
+					<option value="#">-=请选择一项=-</option>
 					<option value ="1">1</option>
 					<option value ="2">2</option>
 					<option value="3">3</option>
@@ -18,14 +19,29 @@
 				</select>
 			</div>
 			<div class="salesmanName">
-				<div class="salesmanName_con">业务员姓名</div><input type="text" class="input" name="name" placeholder="请准确输入业务员姓名">
+				<label for="doc-vld-name-2-0" class="salesmanName_con">业务员姓名</label>
+				<input class="input" type="text" id="doc-vld-name-2-0" minlength="2" maxlength="4"
+						placeholder="请准确输入业务员姓名" name="salesmanName"/>
 			</div>
 			<div class="jobNumber">
-				<div class="jobNumber_con"><div class="jobNumber_cont">工号</div></div><input type="text" name="number" class="input" placeholder="请准确输入业务员工号">
+				<label class="jobNumber_con" for="doc-vld-pwd-1-0"><div class="jobNumber_cont">工号</div></label>
+				<input class="input" type="password" id="doc-vld-pwd-1-0" name="jobNumber" placeholder="请准确输入业务员工号"/>
 			</div>
-			<input name="btnId" type="submit" value="立即生成" class="rightnow">
+			<a class="app_hdsm yxwf right_now" id="btn">立即生成 </a>
+			<div class="app_fixedBox yxwf">
+				<div class="app_fixedBox_con yxwf" id="fixedBox_con">
+					<div class="app_fixedBox_context">
+						<div class="app_fixedBox_context_con yxwf">确定立即生成吗？</div>
+					</div>
+					<div class="app_fixedBox_sure yxwf">
+							<div class="app_fixedBox_no yxwf" id="fixedBox_no">取消</div>
+							<a href="/app/picture.html" class="app_fixedBox_ye yxwf" id="submit" type="submit">确定</a> 
+					</div>
+				</div>   
+			</div>
 		</form>
-	</div>
-	<link rel="stylesheet" href="../js/index.js">
+	</div>  
+	
+	<script src="../js/index.js"></script>
 </body>
 </html>

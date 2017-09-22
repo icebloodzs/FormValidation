@@ -4,127 +4,193 @@
 .clear{
   clear: both;
 }
-
 .generatePosters{
-    margin: 0 auto;
+  margin: 0 auto;
+  width: rem(368);
+  height: rem(640);
+  background-color: #fff;
+  .title_text{
+    @include font_small_head();
     width: rem(368);
-    height: rem(638);
-    background-color: #fff;
-    
-    .titletext{
-      @include font_small_head();
+    height: rem(48);
+    text-align: center;
+    font-size: rem(18);
+    font-weight: 600;
+    line-height: rem(48);
+    background-color: #f8f8f8;
+    font-family: "SimSun","Microsoft YaHei","黑体","宋体",sans-serif;
+  }
+  .messages{
+    padding-top: rem(27);
+    border-top: rem(1) solid #bbb;
+    .bankOutlets{
       width: rem(368);
-      height: rem(48);
-      text-align: center;
-      font-size: rem(18);
-      font-weight: 600;
-      line-height: rem(48);
-      background-color: #f8f8f8;
-      font-family: "SimSun","Microsoft YaHei","黑体","宋体",sans-serif;
-    }
-    .messages{
-      padding-top: rem(27);
-      border-top: rem(1) solid #bbb;
-      .bankOutlets{
-        width: rem(368);
-        display: flex;
-        justify-content: center;
-        font-size: rem(16);
-        line-height: rem(30);
-        margin-bottom: rem(15);
-        .bankOutlets_con{
-          width: rem(100);
-          text-align: center;
-          padding-top: rem(3); 
-         
-        }
-        .input{
-          color: #000;
-          width:rem(248);
-          height:rem(28);
-          border: 1px solid #ccc;
-          border-radius: rem(5);
-          transition:  0.3s ease-in-out;
-          text-indent: rem(5);
-        }
-      }
-      .salesmanName{
-        width: rem(368);
-        display: flex;
-        justify-content: center;
-        font-size: rem(16);
-        line-height: rem(30);
-        margin-bottom: rem(15);
-        .salesmanName_con{
-          width: rem(100);
-          text-align: center;
-          padding-top: rem(3); 
-        }
-        .input{
-          color: #000;
-          width:rem(248);
-          height:rem(28);
-          border: 1px solid #ccc;
-          border-radius: rem(5);
-          transition:  0.3s ease-in-out;
-          text-indent: rem(5);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-         
-        }
-      }
-      .jobNumber{
-        width: rem(368);
-        display: flex;
-        justify-content: center;
-        font-size: rem(16);
-        line-height: rem(30);
-        margin-bottom: rem(15);
-        .jobNumber_con {
-          position: relative;
-          width: rem(100);
-          height:rem(28);
-          .jobNumber_cont{
-            position: absolute;
-            line-height: rem(16);
-            width: rem(36);
-            height: rem(16);
-            left: rem(50);
-            top: rem(2);
-          }
-        
-        }
-        .input{ 
-          color: #000;
-          width:rem(248);
-          height:rem(28);
-          border: 1px solid #ccc;
-          border-radius: rem(5);
-          transition:  0.3s ease-in-out;
-          text-indent: rem(5);
-        }
-      }
-      .rightnow{
-        display: block;
-        text-decoration: none;
-        width: rem(340);
-        height: rem(40);
-        background-color: #fff;
-        border: rem(1) solid #bbbbbb;
-        border-radius: rem(5);
-        color: #525e71;
-        font-size: rem(16);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: rem(16);
+      line-height: rem(20);
+      margin-bottom: rem(30);
+      .bankOutlets_con{
+        width: rem(100);
         text-align: center;
-        line-height: rem(38);
-        margin-left: rem(20);
-        margin-top: rem(90) ;
-        cursor: pointer;
-        outline: none;
+        padding-top: rem(3); 
       }
-      .input:focus {
-        outline: none;
-        border-color: #9ecaed;
-        box-shadow: 0 0 rem(10) #9ecaed;
+      .input{
+        display: block;
+        color: #000;
+        width:rem(248);
+        height:rem(28);
+        border: 1px solid #ccc;
+        border-radius: rem(5);
+      }
     }
+    .salesmanName{
+      width: rem(368);
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      font-size: rem(16);
+      line-height: rem(30);
+      margin-bottom: rem(35);
+      .salesmanName_con{
+        width: rem(100);
+        text-align: center;
+        padding-top: rem(3); 
+      }
+      .input{
+        color: #000;
+        width:rem(248);
+        height:rem(28);
+        border: 1px solid #ccc;
+        border-radius: rem(5);
+        transition:  0.3s ease-in-out;
+        text-indent: rem(5);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      }
+      p{ 
+        display: block;
+        position: absolute;
+        margin: rem(25) 0 0 rem(20); 
+      } 
+    }
+    .jobNumber{
+      width: rem(368);
+      display: flex;
+      justify-content: center;
+      font-size: rem(16);
+      line-height: rem(30);
+      margin-bottom: rem(25);
+      .jobNumber_con {
+        position: relative;
+        width: rem(100);
+        height:rem(28);
+        .jobNumber_cont{
+          position: absolute;
+          line-height: rem(16);
+          width: rem(36);
+          height: rem(16);
+          left: rem(50);
+          top: rem(2);
+        }
+      }
+      .input{ 
+        position: relative;
+        color: #000;
+        width:rem(248);
+        height:rem(28);
+        border: 1px solid #ccc;
+        border-radius: rem(5);
+        transition:  0.3s ease-in-out;
+        text-indent: rem(5);
+      }
+      p{ 
+        display: block;
+        position: absolute;
+      
+        margin-top: rem(25); 
+        margin-left: rem(35);
+      } 
+    }
+    .right_now{
+      display: block;
+      text-decoration: none;
+      width: rem(340);
+      height: rem(40);
+      background-color: #fff;
+      border: rem(1) solid #bbbbbb;
+      border-radius: rem(5);
+      color: #525e71;
+      font-size: rem(16);
+      text-align: center;
+      line-height: rem(38);
+      margin-left: rem(20);
+      margin-top: rem(90) ;
+      cursor: pointer;
+      outline: none;
+    }
+    .input:focus {
+      outline: none;
+      border-color: #9ecaed;
+      box-shadow: 0 0 rem(10) #9ecaed;
+    }
+  }
+}
 
+.app_fixedBox{
+  position: fixed;
+  background: rgba(0,0,0,.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.show{
+    z-index: 10;   
+    opacity: 1;
+  }
+  .app_fixedBox_con{
+    width: rem(300);
+    height: rem(180);
+    border-radius: rem(20);
+    background: #fff;
+    .app_fixedBox_context{
+      width: rem(300);
+      height: rem(120);
+      .app_fixedBox_context_con{
+        width: rem(300);
+        text-align: center;
+        color: #000;
+        font-size: rem(18);
+        line-height: rem(120);
+      }
     }
+    .app_fixedBox_sure{
+      display: flex;
+      width: rem(300);
+      height: rem(60);
+      border-top: 1px solid #ccc;
+      .app_fixedBox_no{
+        width: rem(150);
+        height: rem(60);
+        border-right: 1px solid #ccc;
+        font-size: rem(18);
+        text-align: center;
+        line-height: rem(60);
+        color: #ccc;
+      }
+      .app_fixedBox_ye{
+        width: rem(150);
+        height: rem(60);
+        font-size: rem(18);
+        text-align: center;
+        line-height: rem(60);
+        color:#cb636d;
+      }
+    }
+  }
 }
